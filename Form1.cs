@@ -52,6 +52,7 @@ namespace primeraclase
             txt_respuesta5.Text = "";
             txt_valorUno.Text = "";
             txt_valorDos.Text = "";
+            txt_valorRaiz.Text = "";
         }
 
         private void txt_respuesta_TextChanged(object sender, EventArgs e)
@@ -87,13 +88,19 @@ namespace primeraclase
         //Raiz cuadrada
         private void btn_raiz_Click(object sender, EventArgs e)
         {
-            int numeroUno = Int32.Parse(txt_valorUno.Text);
-            int numeroDos = Int32.Parse(txt_valorDos.Text);
+            try
+            {
+                int valorRaiz = Int32.Parse(txt_valorRaiz.Text);
 
-            raiz = new Calculadora(numeroUno, numeroDos);
+                raiz = new Calculadora(valorRaiz);
 
-            double respuesta5 = raiz.raizCuadrada();
-            txt_respuesta5.Text = respuesta5 + "";
+                double respuesta5 = raiz.raizCuadrada();
+                txt_respuesta5.Text = respuesta5 + "";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Para la raiz cuadrada, solo debes lleñar el campo Raiz...");
+            }
         }
 
         //Potencia de un numero

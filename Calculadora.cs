@@ -9,12 +9,19 @@ namespace primeraclase
     class Calculadora
     {
         int valorUno;
-        int valorDos;        
+        int valorDos;
+        int valorRaiz;
 
-        public Calculadora(int pvalorUno, int pvalorDos)
+        public Calculadora(int pvalorUno, int pvalorDos/*, int pvalorRaiz*/)
         {
             valorUno = pvalorUno;
             valorDos = pvalorDos;
+            //valorRaiz = pvalorRaiz;
+        }
+
+        public Calculadora(int pvalorRaiz)
+        {
+            valorRaiz = pvalorRaiz;
         }
         public int sumarDosNumeros()
         {
@@ -39,7 +46,7 @@ namespace primeraclase
         }
         public int raizCuadrada()
         {
-            return (int)Math.Sqrt(valorUno);
+            return (int)Math.Sqrt(valorRaiz);
         }
 
 

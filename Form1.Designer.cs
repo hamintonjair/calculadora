@@ -29,6 +29,7 @@ namespace primeraclase
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculador));
             this.label1 = new System.Windows.Forms.Label();
             this.txt_valorUno = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,6 +50,8 @@ namespace primeraclase
             this.btn_potencia = new System.Windows.Forms.Button();
             this.txt_respuesta5 = new System.Windows.Forms.TextBox();
             this.txt_respuesta4 = new System.Windows.Forms.TextBox();
+            this.txt_valorRaiz = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +59,7 @@ namespace primeraclase
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(59, 55);
+            this.label1.Location = new System.Drawing.Point(22, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 16);
             this.label1.TabIndex = 0;
@@ -64,7 +67,7 @@ namespace primeraclase
             // 
             // txt_valorUno
             // 
-            this.txt_valorUno.Location = new System.Drawing.Point(155, 53);
+            this.txt_valorUno.Location = new System.Drawing.Point(116, 50);
             this.txt_valorUno.Name = "txt_valorUno";
             this.txt_valorUno.Size = new System.Drawing.Size(54, 20);
             this.txt_valorUno.TabIndex = 1;
@@ -73,7 +76,7 @@ namespace primeraclase
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 80);
+            this.label2.Location = new System.Drawing.Point(22, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 16);
             this.label2.TabIndex = 2;
@@ -82,7 +85,7 @@ namespace primeraclase
             // 
             // txt_valorDos
             // 
-            this.txt_valorDos.Location = new System.Drawing.Point(155, 79);
+            this.txt_valorDos.Location = new System.Drawing.Point(116, 76);
             this.txt_valorDos.Name = "txt_valorDos";
             this.txt_valorDos.Size = new System.Drawing.Size(54, 20);
             this.txt_valorDos.TabIndex = 3;
@@ -253,12 +256,31 @@ namespace primeraclase
             this.txt_respuesta4.Size = new System.Drawing.Size(100, 20);
             this.txt_respuesta4.TabIndex = 15;
             // 
+            // txt_valorRaiz
+            // 
+            this.txt_valorRaiz.Location = new System.Drawing.Point(177, 76);
+            this.txt_valorRaiz.Name = "txt_valorRaiz";
+            this.txt_valorRaiz.Size = new System.Drawing.Size(54, 20);
+            this.txt_valorRaiz.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(174, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 16);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Valor Raiz";
+            // 
             // Calculador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(296, 365);
+            this.Controls.Add(this.txt_valorRaiz);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_valorDos);
@@ -267,6 +289,7 @@ namespace primeraclase
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Calculador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -300,6 +323,8 @@ namespace primeraclase
         private System.Windows.Forms.TextBox txt_respuesta5;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button btn_raiz;
+        private System.Windows.Forms.TextBox txt_valorRaiz;
+        private System.Windows.Forms.Label label4;
     }
 }
 
